@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techer section</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='tech.css')}}">
+</head>
+<body>
+    <header class="head" id="header">
+
+        <a href="#" class="logo"><img src="" alt=""></a>
+        
+        <nav>
+          <ul>
+            <li><a href="/course">Go To Courses</a></li>
+            <li><a href="#course"></a></li>
+            <li><a href="#service"></a></li>
+            <li><a href="#testimonial"></a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </nav>
+
+    <!-- contact section starts  -->
+
+ <div class="center">
+        <h1>Upload Video</h1>
+
+            <!-- <div class="inputbox">
+                <input type="text" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Password</span>
+            </div> -->
+        <form action="/upload" method="post" enctype="multipart/form-data">
+<!--                 <div class="inputbox">-->
+<!--                <input type="text" required="required" name="tname">-->
+<!--                <span>Topic name</span>-->
+<!--                 </div>-->
+                <div class="">
+                <input type="file" name="myfile" multiple="true" >
+                </div>
+                <br>
+                <div class="inputbox">
+                <input type="submit" value="Upload">
+                </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>

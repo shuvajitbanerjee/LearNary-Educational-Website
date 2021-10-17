@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+ 
+  
+  #header .logo img {
+    height: 3.5rem;
+  }
+  
+  #header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+    margin-bottom: 0;
+  }
+  
+  #header nav ul li {
+    margin-right: 2rem;
+  }
+  
+  #header nav ul li a {
+    color: #0f8a9d;
+    font-size: 2rem;
+  }
+  
+  #header nav ul li a:hover {
+    text-decoration: none;
+    color: #0f8a9d;
+  }
+  
+  #header .fa-bars {
+    font-size: 3rem;
+    color: #0f8a9d;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #home {
+    min-height: 100vh;
+    width: 100vw;
+   background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-animation: background 10s alternate infinite;
+            animation: background 10s alternate infinite;
+  }
+  
+ 
+  #course {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100vw;
+  }
+  
+  #course .heading {
+    font-size: 4rem;
+    padding-top: 5rem;
+    margin: 2rem 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    color: #0f8a9d;
+  }
+  
+  #course .heading::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: .3rem;
+    width: 60%;
+    border-radius: 5rem;
+    background: #0f8a9d;/* <--one point-->*/
+  }
+  
+  #course .box-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  #course .box-container .box {
+    height: 25rem;
+    width: 30rem;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0 0 .3rem #333;
+            box-shadow: 0 0 .3rem #333;
+    margin: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  #course .box-container .box img {
+    height: 35%;
+    width: 35%;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+  
+  #course .box-container .box p {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;         /* <--one point-->*/
+    opacity: 0;
+    -webkit-transform: translateY(12rem);
+            transform: translateY(12rem);
+    padding: 0 .4rem;
+  }
+  
+  #course .box-container .box:hover p {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  
+  #course .box-container .box:hover img {
+    height: 25%;
+    width: 25%;
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  
+  #course .box-container .box:hover {
+    background: #333;
+  }
+  .submit-btn{
+      width:90%;
+      padding:3px 20px;
+      cursor:pointer;
+      display:block;
+      margin:auto;
+      background:linear-gradient(to right,#00B894,#83FF00);
+      border:0;
+      outline:none;
+      border-radius:10px;
+  }
+  
+  

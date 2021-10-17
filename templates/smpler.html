@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Registion</title>
+ <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='reg.css')}}">
+</head>
+<body>
+    <div class="jnj">
+        <div class="form">
+            <div class="button_box">
+                <div id="btn"></div>
+                <button type="button" class="toggleb-btn" onclick="student()">Student</button>
+                <button type="button" class="toggleb-btn" onclick="teacher()">Teacher</button>
+            <form action="/add_user" method="post" id="Student"class="input-group">
+                <input type="text" class="input-field" placeholder="Name" name="uname" required>
+                
+                <input type="email" class="input-field" placeholder="Email Id" name="uemail" required>
+                
+                
+                <input type="password" class="input-field" placeholder="Password" name="upassword" required>
+                <input type="checkbox" class="chech-box"><span>I agree all Trems & Condition</span>
+                <button type="submit" class="submit-btn">Register as Student </button>
+                <p class="loginreg">Already have a account ?<a href="/login">Login here</a></p>
+            </form>
+            <form action="/add_tech" method="post" id="Teacher" class="input-group">
+                <input type="text" class="input-field" placeholder="Name"  name="xname" required>
+                <input type="email" class="input-field" placeholder="Email Id" name="xemail" required>
+                
+                <input type="password" class="input-field" placeholder="Password" name="xpassword" required>
+                <input type="checkbox" class="chech-box"><span>I agree all Trems & Condition</span>
+                <button type="submit" class="submit-btn">Register as Teacher</button>
+                <p class="loginreg">Already have a account ?<a href="/login">Login here</a></p>
+            </form>
+
+
+        </div>
+
+    </div> 
+    <script>
+        var x = document.getElementById("Student");
+        var y = document.getElementById("Teacher");
+        var z = document.getElementById("btn");
+        function student() {
+            x.style.left="-30px";
+            y.style.left="400px";
+            z.style.left="0px";
+
+            
+        }
+
+        function teacher() {
+            x.style.left="-400px";
+            y.style.left="-30px";
+            z.style.left="110px";
+
+            
+        }
+
+    </script>
+</body>
+</html>
